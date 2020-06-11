@@ -1,8 +1,10 @@
 # Restaurant-Rating-Prediction Deployment
+![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![scikit-learnn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg)
+
 
 • This repository consists of files required to deploy a ___Machine Learning Web App___ created with ___Flask___ on ___Heroku___ platform.
 
-• If You Want to Deploy the model on __GCP (Google Cloud Platform)__ just rename _app.py_ file to _main.py_ and replace _procfile_ with _app.yaml_
+• If You Want to Deploy the model on __GCP (Google Cloud Platform)__ just rename _app.py_ file to _main.py_ and replace _procfile_ with _app.yaml_ link for file : _https://github.com/Anand-ark/GCP-Deployment_
 
 • If you want to view the deployed model, click on the following link for demo:<br />
 Deployed at: _https://predicting-restaurant-rating.herokuapp.com/_
