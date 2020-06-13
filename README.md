@@ -1,5 +1,6 @@
 # Restaurant-Rating-Prediction Deployment
-![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![scikit-learnn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg)
+![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![scikit-learnn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg) ![Pandas](https://img.shields.io/badge/Library-Pandas-blueviolet.svg) ![seaborn](https://img.shields.io/badge/Library-Seaborn-ff69b4.svg) ![Webapp -Flask](https://img.shields.io/badge/Webapp-Flask-red.svg) ![Deployment-GoogleCloudPlatform](https://img.shields.io/badge/Deployment-GoogleCloudPlatform-blue.svg)
+
 
 
 • This repository consists of files required to deploy a ___Machine Learning Web App___ created with ___Flask___ on ___Heroku___ platform.
