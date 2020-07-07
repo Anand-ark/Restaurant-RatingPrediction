@@ -32,6 +32,12 @@ def predict():
     features.append(city['City'][c])
     p=request.form["Price Range"]
     features.append(price['Price'][p])
+    #if p=='Low':
+     #   features.append(price['Price']['Low'])
+    #elif p=='Medium':
+     #   features.append(price['Price']['Medium'])
+    #else:
+     #   features.append(price['Price']['Expensive'])
     r=(int(request.form["Number of Reviews"]))
     features.append(r)
     d=request.form["Cuisine_Style"]
