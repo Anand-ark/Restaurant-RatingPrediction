@@ -16,7 +16,7 @@ cuisine = pickle.load(open('cuisine.obj','rb'))
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index1.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -60,7 +60,7 @@ def predict():
 
     #output =prediction[0]
 
-    return render_template('index.html', prediction_text='Prediction : {}'.format(prediction))
+    return render_template('index1.html', prediction_text='Prediction : {}'.format(prediction))
 
 
 if __name__ == "__main__":
