@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+             
+            background-image: url(5.JPG);
+            background-size:1366px 900px;
+            font-family: sans-serif;
+        }
+
+
+
+
+        input {
+            width: 40%;
+            padding: 10px 5px;
+            margin: 10px 10px;
+            box-sizing: border-box;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-left: 380px;
+            margin-right: 50px;
+
+        }
+         select{
+            width: 40%;
+            padding: 10px 5px;
+            margin: 10px 10px;
+            box-sizing: border-box;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-left: 380px;
+            margin-right: 50px;
+
+       }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h1 style="text-align: center; color: rgb(255, 255, 0);margin-top: 1.5%;margin-bottom: 1.5%"><b>Restaurant Rating Prediction </b></h1>
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict')}}" method="post">
+            <!--<input type="text" placeholder="Name of Restaurant" /> -->
+
+            <!--<input type="text" name="City" placeholder="Name of City e.g: Amsterdam, Dublin, Berlin etc" required="required" />-->
+            <select class="form-input align-center" name="City">
+                    <option value="">Select Name of City</option>
+                    <option value="Amsterdam">Amsterdam</option>
+                    <option value="Athens">Athens</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Belin">Berlin</option>
+                    <option value="Bratislava">Bratislava</option>
+                    <option value="Brussels">Brussels</option>
+                    <option value="Budapest">Budapest</option>
+                    <option value="Copenhagen">Copenhagen</option>
+                    <option value="Dublin">Dublin</option>
+                    <option value="Edinburgh">Edinburgh</option>
+                    <option value="Geneva">Geneva</option>
+                    <option value="Hamburg">Hamburg</option>
+                    <option value="Helsinki">Helsinki</option>
+                    <option value="Krakow">Krakow</option>
+                    <option value="Lisbon">Lisbon</option>
+                    <option value="Ljubljana">Ljubljana</option>
+                    <option value="London">London</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Lyon">Lyon</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Milan">Milan</option>
+                    <option value="Munich">Munich</option>
+                    <option value="Oporto">Oporto</option>
+                    <option value="Oslo">Oslo</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Prague">Prague</option>
+                    <option value="Rome">Rome</option>
+                    <option value="Stockholm">Stockholm</option>
+                    <option value="Vienna">Vienna</option>
+                    <option value="Warsaw">Warsaw</option>
+                    <option value="Zurich">Zurich</option>
+            </select>
+            <!--<input type="text" name="Price Range" placeholder="Price Range - Cheap OR Medium OR Expensive"  required="required" /> -->
+            <select class="form-input align-center" name="Price Range">
+                    <option value="">Select Price Range</option>
+                    <option value="Cheap">Cheap</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Expensive">Expensive</option>
+            </select>
+            <input type="text" name="Number of Reviews" placeholder="Number of Reviews" required="required" />
+            <!--<input type="text" name="Cuisine_Style" placeholder="Cuisine Style e.g: Seafood, Southwestern, Soups, etc"  required="required" />-->
+            <select class="form-input align-center" name="Cuisine_Style">
+                    <option value="">Select Cuisine</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="FastFood">FastFood</option>
+                    <option value="Seafood">Seafood</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="VegetarianFriendly">VegetarianFriendly</option>
+                    <option value="European">European</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Afghani">Afghani</option>
+
+                    <option value="Cafe">Cafe</option>
+                    <option value="French">French</option>
+                    <option value="Asian">Asian</option>
+
+                    <option value="Chinese">Chinese</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Tibetan">Tibetan</option>
+            </select>
+
+            <div style=" position:relative;top:50%; left:40%;">
+                <button type="submit"class="btn btn-primary" style="margin-top: 0.5%;">Predict Rating</button>
+            </div>
+
+        </form>
+        <br>
+           
+                <h1 style="text-align:center; color: yellow;"><b>{{ prediction_text }}</b></h1>
+
+
+    </div>
+ <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 35px;
+  background-image: linear-gradient(to right, rgba(0,255,0,0), rgba(255,0,0,1));
+
+   color: black;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="footer">
+    <p><i><b>A Machine Learning Web App Build With Flask by -- Anand Ranjan </b></i></p>
+</div>
+
+</body>
+</body>
+
+</html>
