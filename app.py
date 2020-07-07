@@ -1,10 +1,10 @@
 import numpy as np
-from sklearn.tree import DecisionTreeClassifier
+#from sklearn.tree import DecisionTreeClassifier
 from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('sm_model.pkl', 'rb'))
+#model = pickle.load(open('sm_model.pkl', 'rb'))
 #file1 = open("city.obj",'rb')
 city = pickle.load(open('city.obj','rb'))
 #file2 = open("price.obj",'rb')
@@ -37,7 +37,8 @@ def predict():
     features.append(cuisine['Cuisine_Style'][d])
     
     final_features = [np.array(features)]
-    prediction = model.predict(final_features)
+    #prediction = model.predict(final_features)
+    prediction=np.sum(final_features)
     if(prediction==0):
         prediction='1 STAR'
     elif(prediction==1):
