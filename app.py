@@ -1,7 +1,7 @@
-import numpy as np
-from sklearn.tree import DecisionTreeClassifier
-from flask import Flask, request, jsonify, render_template
 import pickle
+import numpy as np
+from flask import Flask, request, render_template
+from sklearn.tree import DecisionTreeClassifier
 
 app = Flask(__name__)
 
