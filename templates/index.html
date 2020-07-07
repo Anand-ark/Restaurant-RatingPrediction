@@ -56,8 +56,8 @@
         <form action="{{ url_for('predict')}}" method="post">
             <!--<input type="text" placeholder="Name of Restaurant" /> -->
 
-            <!--<input type="text" name="City" placeholder="Name of City e.g: Amsterdam, Dublin, Berlin etc" required="required" />-->
-            <select>
+            <input type="text" name="City" placeholder="Name of City e.g: Amsterdam, Dublin, Berlin etc" required="required" />
+            <!--<select>
                     <option value="">Select Name of City</option>
                     <option value="">Amsterdam</option>
                     <option value="">Athens</option>
@@ -90,17 +90,17 @@
                     <option value="">Vienna</option>
                     <option value="">Warsaw</option>
                     <option value="">Zurich</option>
-            </select>
+            </select>-->
             <!--<input type="text" name="Price Range" placeholder="Price Range - Cheap OR Medium OR Expensive"  required="required" /> -->
-            <select>
+            <select class="form-input align-center" name="Price Range">
                     <option value="">Select Price Range</option>
-                    <option value="">Cheap</option>
-                    <option value="">Medium</option>
-                    <option value="">Expensive</option>
+                    <option value="Cheap">Cheap</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Expensive">Expensive</option>
             </select>
             <input type="text" name="Number of Reviews" placeholder="Number of Reviews" required="required" />
-            <!--<input type="text" name="Cuisine_Style" placeholder="Cuisine Style e.g: Seafood, Southwestern, Soups, etc"  required="required" /> -->
-            <select>
+            <input type="text" name="Cuisine_Style" placeholder="Cuisine Style e.g: Seafood, Southwestern, Soups, etc"  required="required" />
+            <!--<select>
                     <option value="">Select Cuisine</option>
                     <option value="">Pizza</option>
                     <option value="">Spanish</option>
@@ -120,7 +120,7 @@
                     <option value="">Chinese</option>
                     <option value="">Mexican</option>
                     <option value="">Tibetan</option>
-            </select>
+            </select>-->
 
             <div style=" position:relative;top:50%; left:40%;">
                 <button type="submit"class="btn btn-primary" style="margin-top: 0.5%;">Predict Rating</button>
