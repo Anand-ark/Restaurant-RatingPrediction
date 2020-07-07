@@ -33,7 +33,7 @@
     <div class="login">
         <h1 style="text-align: center; color: rgb(85, 85, 85);margin-top: 1.5%;margin-bottom: 1.5%"><b>Restaurant Rating Prediction</b></h1>
         <!-- Main Input For Receiving Query to our ML -->
-        <form action="{{ url_for('predict')}}" method="POST">
+        <form action="{{ url_for('predict')}}" method="post">
             <!--<input type="text" placeholder="Name of Restaurant" /> -->
 
             <input type="text" name="City" placeholder="Name of City e.g: Amsterdam, Dublin, Berlin etc" required="required" />
