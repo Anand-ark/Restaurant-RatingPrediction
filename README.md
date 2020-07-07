@@ -10,8 +10,7 @@
 • If you want to view the deployed model, click on the following link for demo:<br />
 Deployed at: _https://predicting-restaurant-rating.herokuapp.com/_
 
-![Screen Shot 1942-03-20 at 9 04 21 AM](https://user-images.githubusercontent.com/44177280/84224186-784b4980-aaf9-11ea-961b-4462414aac9f.png)
-![ooooo](https://user-images.githubusercontent.com/44177280/84359354-216f6e00-abe6-11ea-8a2d-f1bf47cefad9.PNG)
+![rating](https://user-images.githubusercontent.com/44177280/86786872-1c38fe00-c082-11ea-90bd-1da889bd4921.PNG)
 
 
 • Please do ⭐ the repository, if it helped you in anyway.
