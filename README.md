@@ -7,8 +7,6 @@
 
 • If You Want to Deploy the model on __GCP (Google Cloud Platform)__ just rename _app.py_ file to _main.py_ and replace _procfile_ with _app.yaml_ link for file : _https://github.com/Anand-ark/GCP-Deployment_
 
-• If you want to view the deployed model, click on the following link for demo:<br />
-Deployed at: _https://predicting-restaurant-rating.herokuapp.com/_
 
 ![rating](https://user-images.githubusercontent.com/44177280/86786872-1c38fe00-c082-11ea-90bd-1da889bd4921.PNG)
 
