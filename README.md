@@ -7,8 +7,7 @@
 
 • If You Want to Deploy the model on __GCP (Google Cloud Platform)__ just rename _app.py_ file to _main.py_ and replace _procfile_ with _app.yaml_ link for file : _https://github.com/Anand-ark/GCP-Deployment_
 
-
-![rating](https://user-images.githubusercontent.com/44177280/86786872-1c38fe00-c082-11ea-90bd-1da889bd4921.PNG)
-
+![load gif](https://user-images.githubusercontent.com/44177280/86878343-51872f80-c106-11ea-8a9a-ac5f76afb34a.gif)
 
 • Please do ⭐ the repository, if it helped you in anyway.
+
